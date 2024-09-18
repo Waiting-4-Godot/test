@@ -1,7 +1,7 @@
 project(test)
 cmake_minimum_required(VERSION 3.6)
 
-
+# 这里改成自己的
 set(GODOT_GDEXTENSION_DIR F:/Godot/godot-cpp/godot-cpp-4.3/gdextension/ CACHE STRING "Path to GDExtension interface header directory")
 set(CPP_BINDINGS_PATH F:/Godot/godot-cpp/godot-cpp-4.3/ CACHE STRING "Path to C++ bindings")
 
@@ -133,7 +133,7 @@ if (CMAKE_VERSION VERSION_GREATER "3.13")
             PRIVATE
             ${CPP_BINDINGS_PATH}/bin/
             )
-
+    # 这里改成自己的
     target_link_libraries(${PROJECT_NAME}
             # libgodot-cpp.${SYSTEM_NAME}.${BUILD_TYPE}$<$<NOT:$<PLATFORM_ID:Android>>:.${BITS}>
             "F:/Godot/godot-cpp/godot-cpp-4.3/build/bin/Debug/godot-cpp.windows.debug.64.lib"
