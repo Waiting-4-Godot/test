@@ -1,0 +1,11 @@
+[configuration]
+
+entry_symbol = "example_library_init"
+compatibility_minimum = "4.1"
+
+[libraries]
+
+windows.debug.x86_64 = "../../bin/win64/test.dll"
+
+[icons]
+Test = "res://yuebing.svg"
